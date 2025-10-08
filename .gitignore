@@ -44,18 +44,15 @@ env/
 .DS_Store
 Thumbs.db
 
-# Data files
+# Data files - exclude large raw data
 data/raw/*
-data/processed/*
-*.csv
 *.parquet
 *.json
-*.xlsx
-*.xls
 
-# But keep directory structure
+# But keep directory structure and processed outputs
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!data/processed/*.csv
 
 # Logs
 *.log
